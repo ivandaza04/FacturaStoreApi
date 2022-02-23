@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1MPaTVDw7hMqPCOGSVOrDpC9EVWCA5C1F/tOQG8k1PU=",
+  "Source": "FacturaStoreApi",
+  "BasePath": "_content/FacturaStoreApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
