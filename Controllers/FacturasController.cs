@@ -17,7 +17,7 @@ public class FacturasController : ControllerBase
     public async Task<List<Factura>> Get() =>
         await _facturasService.GetAsync();
 
-    [HttpGet("{id:length(24)}")]
+    [HttpGet("{id:}")]
     public async Task<ActionResult<Factura>> Get(string id)
     {
         var factura = await _facturasService.GetAsync(id);
@@ -38,7 +38,7 @@ public class FacturasController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = newFactura.Id }, newFactura);
     }
 
-    [HttpPut("{id:length(24)}")]
+    [HttpPut("{id:}")]
     public async Task<IActionResult> Update(string id, Factura updatedFactura)
     {
         var factura = await _facturasService.GetAsync(id);
@@ -55,7 +55,7 @@ public class FacturasController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("{id:length(24)}")]
+    [HttpDelete("{id:}")]
     public async Task<IActionResult> Delete(string id)
     {
         var factura = await _facturasService.GetAsync(id);

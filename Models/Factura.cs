@@ -5,9 +5,8 @@ namespace FacturaStoreApi.Models;
 
 public class Factura
 {
-    [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
-    public string? Id { get; set; }
+    [BsonElement("Id")]
+    public string Id { get; set; } = null!;
 
     [BsonElement("CodigoFactura")]
     public string codigoFactura { get; set; } = null!;
