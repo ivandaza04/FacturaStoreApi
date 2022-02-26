@@ -23,4 +23,7 @@ public class Factura
 
     [BsonElement("TotalFactura")]
     public string totalFactura { get; set; } = null!;
+
+    [BsonElement("Estado")]
+    public string estado { get; set; } = null!;
 }
