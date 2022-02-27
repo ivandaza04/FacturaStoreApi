@@ -84,3 +84,7 @@ C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreAp
 C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\obj\Debug\net6.0\FacturaStoreApi.pdb
 C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\obj\Debug\net6.0\FacturaStoreApi.genruntimeconfig.cache
 C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\obj\Debug\net6.0\ref\FacturaStoreApi.dll
+C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\bin\Debug\net6.0\MailKit.dll
+C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\bin\Debug\net6.0\MimeKit.dll
+C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\USER\Documents\Archivo\ProyectosNet\AngularWebAPIFactura\FacturaStoreApi\bin\Debug\net6.0\BouncyCastle.Crypto.dll

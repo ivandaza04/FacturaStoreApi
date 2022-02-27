@@ -7,7 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<FacturaStoreDatabaseSettings>(
     builder.Configuration.GetSection("FacturaStoreDatabase"));
 
+builder.Services.Configure<MailSettings>(
+    builder.Configuration.GetSection("MailSettings"));
+
 builder.Services.AddSingleton<FacturasService>();
+builder.Services.AddSingleton<MailService>();
+
+builder.Services.AddTransient<IMailService, MailService>();
 
 builder.Services.AddControllers()
      .AddJsonOptions(
@@ -29,7 +35,7 @@ app.UseCors(x => x
             .AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader());
-            
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
