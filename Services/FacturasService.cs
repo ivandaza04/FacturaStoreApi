@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace FacturaStoreApi.Services;
 
-public class FacturasService
+public class FacturasService : IFacturasService
 {
     private readonly IMongoCollection<Factura> _facturasCollection;
 
@@ -35,4 +35,7 @@ public class FacturasService
 
     public async Task RemoveAsync(string id) =>
         await _facturasCollection.DeleteOneAsync(x => x.Id == id);
+
+    public async Task EstadoAsync(string id, Factura updatedFactura) =>
+        await _facturasCollection.ReplaceOneAsync(x => x.Id == id, updatedFactura);
 }

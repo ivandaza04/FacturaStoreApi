@@ -13,6 +13,7 @@ builder.Services.Configure<MailSettings>(
 builder.Services.AddSingleton<FacturasService>();
 builder.Services.AddSingleton<MailService>();
 
+builder.Services.AddTransient<IFacturasService, FacturasService>();
 builder.Services.AddTransient<IMailService, MailService>();
 
 builder.Services.AddControllers()

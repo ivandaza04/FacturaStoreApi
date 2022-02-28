@@ -8,9 +8,9 @@ namespace FacturaStoreApi.Controllers;
 [Route("api/[controller]")]
 public class FacturasController : ControllerBase
 {
-    private readonly FacturasService _facturasService;
+    private readonly IFacturasService _facturasService;
 
-    public FacturasController(FacturasService facturasService) =>
+    public FacturasController(IFacturasService facturasService) =>
         _facturasService = facturasService;
 
     [HttpGet]
