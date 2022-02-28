@@ -69,4 +69,39 @@ public class FacturasController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpPut("estado/{id:}")]
+    public async Task<IActionResult> Estado(string id, Factura updatedFactura)
+    {
+        var factura = await _facturasService.GetAsync(id);
+
+        if (factura is null)
+        {
+            return NotFound();
+        }
+
+        switch (factura.estado)
+        {
+            case "primerrecordatorio":
+                Console.WriteLine("Enviar un email al cliente informando " + factura.estado);
+                factura.estado = "segundorecordatorio";
+                break;
+
+            case "segundorecordatorio":
+                Console.WriteLine("Enviar un email al cliente informando " + factura.estado);
+                factura.estado = "desactivado";
+                break;
+            
+            case "desactivado":
+                Console.WriteLine("Enviar un email al cliente informando " + factura.estado);
+                break;
+        }
+
+        updatedFactura.Id = factura.Id;
+        updatedFactura.estado = factura.estado;
+
+        await _facturasService.UpdateAsync(id, updatedFactura);
+
+        return NoContent();
+    }
 }
