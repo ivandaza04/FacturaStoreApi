@@ -10,9 +10,6 @@ builder.Services.Configure<FacturaStoreDatabaseSettings>(
 builder.Services.Configure<MailSettings>(
     builder.Configuration.GetSection("MailSettings"));
 
-builder.Services.AddSingleton<FacturasService>();
-builder.Services.AddSingleton<MailService>();
-
 builder.Services.AddTransient<IFacturasService, FacturasService>();
 builder.Services.AddTransient<IMailService, MailService>();
 
