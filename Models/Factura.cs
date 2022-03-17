@@ -10,10 +10,10 @@ public class Factura
     public string? Id { get; set; }
 
     [BsonElement("CodigoFactura")]
-    public string codigoFactura { get; set; } = null!;
+    public string? codigoFactura { get; set; }
 
     [BsonElement("Cliente")]
-    public string cliente { get; set; } = null!;
+    public string? cliente { get; set; }
 
     [BsonElement("Ciudad")]
     public string ciudad { get; set; } = null!;
