@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xRiXVEmhDp6z+f3huU/XGgdSueyDThozOb5oanisR230itsqldEo67aZ15zmiUUFl4uB6tE0c+VIJY7l/vvQ2g==",
+  "dgSpecHash": "ARdt3AH29jC8/CrEL0bmjTvyjxn6i7QuMRuVA/nlCJgMpfo21m7UuGjx/Dq0fynohOuvXLwp34Folsu2q1ds0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Documents\\Archivo\\ProyectosNet\\AngularWebAPIFactura\\FacturaStoreApi\\FacturaStoreApi.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\Archivo\\ProyectosNet\\AngularWebAPIFactura\\facturastoreapi\\FacturaStoreApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\mailkit\\2.6.0\\mailkit.2.6.0.nupkg.sha512",
